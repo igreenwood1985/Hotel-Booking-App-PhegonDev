@@ -38,7 +38,7 @@ public class Booking {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "room_id")
     private Room room;
 
     public void calculateTotalNumberOfGuests(){
