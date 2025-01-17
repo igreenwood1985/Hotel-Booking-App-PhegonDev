@@ -26,7 +26,7 @@ public class Booking {
 
     @Min(value = 1, message = "Number of adults must not be less than 1")
     private int numOfAdults;
-    @Min(value = 0, message = "Number of adults must not be less than 0")
+    @Min(value = 0, message = "Number of children must not be less than 0")
     private int numOfChildren;
     @Min(value = 1, message = "Number of guests must not be less than 1")
     private int numOfGuests;
@@ -38,7 +38,7 @@ public class Booking {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "room_id")
     private Room room;
 
     public void calculateTotalNumberOfGuests(){

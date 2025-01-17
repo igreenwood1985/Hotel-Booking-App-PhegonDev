@@ -14,18 +14,12 @@ public class BookingDTO {
     private Long id;
 
     private LocalDate checkInDate;
-
     private LocalDate checkOutDate;
-
     private int numOfAdults;
-
     private int numOfChildren;
-
     private int numOfGuests;
-
     private String bookingConfirmationCode;
 
-    private User user;
-
-    private Room room;
+    private UserDTO user;
+    private RoomDTO room;
 }
